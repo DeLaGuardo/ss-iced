@@ -22,7 +22,7 @@ exports.init = function(root, config) {
       } catch (e) {
         var message = "! Error compiling " + path + " into IcedCoffeeScript";
         console.log(String.prototype.hasOwnProperty('red') && message.red || message);
-        cb("Error compiling to CoffeeScript: " + e.stack);
+        cb("Error compiling to IcedCoffeeScript: " + e.stack);
         throw new Error(e);
       }
     }
