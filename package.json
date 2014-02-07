@@ -2,7 +2,7 @@
   "name": "ss-iced",
   "author": "Kirill Chernyshov <delaguardo@gmail.org>",
   "description": "IcedCoffeeScript wrapper for SocketStream 0.3.x",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "main": "./wrapper.js",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
     "node": ">= 0.6.0"
   },
   "dependencies": {
-    "iced-coffee-script": "~1.7.0-a"
+    "iced-coffee-script": "~1.7.1-a"
   },
   "devDependencies": {}
 }
