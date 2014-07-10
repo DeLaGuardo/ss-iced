@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish', '.' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/delaguardo/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/delaguardo/.npm/ss-iced/0.3.13/package.tgz', '.' ]
+11 verbose tarball /Users/delaguardo/.npm/ss-iced/0.3.13/package.tgz
+12 verbose folder .
+13 info prepublish ss-iced@0.3.13
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/delaguardo/.npm/1f1177db-tar.lock
+16 silly lockFile 4e5a8487-o-npm-ss-iced-0-3-13-package-tgz tar:///Users/delaguardo/.npm/ss-iced/0.3.13/package.tgz
+17 verbose lock tar:///Users/delaguardo/.npm/ss-iced/0.3.13/package.tgz /Users/delaguardo/.npm/4e5a8487-o-npm-ss-iced-0-3-13-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 4e5a8487-o-npm-ss-iced-0-3-13-package-tgz tar:///Users/delaguardo/.npm/ss-iced/0.3.13/package.tgz
+21 silly lockFile 4e5a8487-o-npm-ss-iced-0-3-13-package-tgz tar:///Users/delaguardo/.npm/ss-iced/0.3.13/package.tgz
+22 silly lockFile dd7304fc-uardo-npm-ss-iced-0-3-13-package /Users/delaguardo/.npm/ss-iced/0.3.13/package
+23 verbose lock /Users/delaguardo/.npm/ss-iced/0.3.13/package /Users/delaguardo/.npm/dd7304fc-uardo-npm-ss-iced-0-3-13-package.lock
+24 silly lockFile dd7304fc-uardo-npm-ss-iced-0-3-13-package /Users/delaguardo/.npm/ss-iced/0.3.13/package
+25 silly lockFile dd7304fc-uardo-npm-ss-iced-0-3-13-package /Users/delaguardo/.npm/ss-iced/0.3.13/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'ss-iced',
+28 silly publish   author: { name: 'Kirill Chernyshov', email: 'delaguardo@gmail.org' },
+28 silly publish   description: 'IcedCoffeeScript wrapper for SocketStream 0.3.x',
+28 silly publish   version: '0.3.13',
+28 silly publish   main: './wrapper.js',
+28 silly publish   repository: { type: 'git', url: 'https://github.com/DeLaGuardo/ss-iced' },
+28 silly publish   engines: { node: '>= 0.6.0' },
+28 silly publish   dependencies: { 'iced-coffee-script': '~1.7.1-f' },
+28 silly publish   devDependencies: {},
+28 silly publish   readme: '# IcedCoffeeScript (JS) wrapper for SocketStream 0.3\n\nAllows you to use [IcedCoffeeScript](http://maxtaco.github.io/coffee-script/) files (.iced) in your SocketStream project.\n\n\n### Instructions\n\nAdd `ss-iced` to your application\'s `package.json` file and then add this line to app.js:\n\n```javascript\nss.client.formatters.add(require(\'ss-iced\'));\n```\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '1ac801b2d7d4293644a922c8681f6db43adb6064',
+28 silly publish   bugs: { url: 'https://github.com/DeLaGuardo/ss-iced/issues' },
+28 silly publish   homepage: 'https://github.com/DeLaGuardo/ss-iced',
+28 silly publish   _id: 'ss-iced@0.3.13',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: '1f962f585265710562bc4761f06cee7c2280e893',
+28 silly publish   _from: '.' }
+29 verbose url raw ss-iced
+30 verbose url resolving [ 'https://registry.npmjs.org/', './ss-iced' ]
+31 verbose url resolved https://registry.npmjs.org/ss-iced
+32 info trying registry request attempt 1 at 11:42:28
+33 http PUT https://registry.npmjs.org/ss-iced
+34 http 403 https://registry.npmjs.org/ss-iced
+35 verbose headers { date: 'Thu, 10 Jul 2014 04:42:32 GMT',
+35 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+35 verbose headers   'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=30',
+35 verbose headers   'content-length': '2488',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   'x-served-by': 'cache-fra1230-FRA',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1404967351.378873,VS0,VE672',
+35 verbose headers   'keep-alive': 'timeout=10, max=50',
+35 verbose headers   connection: 'Keep-Alive' }
+36 error publish Failed PUT 403
+37 error Error: forbidden cannot modify pre-existing version: 0.3.13
+37 error old={"name":"ss-iced","author":{"name":"Kirill Chernyshov","email":"delaguardo@gmail.org"},"description":"IcedCoffeeScript wrapper for SocketStream 0.3.x","version":"0.3.13","main":"./wrapper.js","repository":{"type":"git","url":"https://github.com/DeLaGuardo/ss-iced"},"engines":{"node":">= 0.6.0"},"dependencies":{"iced-coffee-script":"~1.7.1-b"},"devDependencies":{},"bugs":{"url":"https://github.com/DeLaGuardo/ss-iced/issues"},"homepage":"https://github.com/DeLaGuardo/ss-iced","_id":"ss-iced@0.3.13","dist":{"shasum":"f3023de910bc4174cca73aa3ab34aaa7c2abfc17","tarball":"http://registry.npmjs.org/ss-iced/-/ss-iced-0.3.13.tgz"},"_from":".","_npmVersion":"1.4.4","_npmUser":{"name":"delaguardo","email":"delaguardo@gmail.com"},"maintainers":[{"name":"delaguardo","email":"delaguardo@gmail.com"}]}
+37 error new={"name":"ss-iced","author":{"name":"Kirill Chernyshov","email":"delaguardo@gmail.org"},"description":"IcedCoffeeScript wrapper for SocketStream 0.3.x","version":"0.3.13","main":"./wrapper.js","repository":{"type":"git","url":"https://github.com/DeLaGuardo/ss-iced"},"engines":{"node":">= 0.6.0"},"dependencies":{"iced-coffee-script":"~1.7.1-f"},"devDependencies":{},"readme":"# IcedCoffeeScript (JS) wrapper for SocketStream 0.3\u000a\u000aAllows you to use [IcedCoffeeScript](http://maxtaco.github.io/coffee-script/) files (.iced) in your SocketStream project.\u000a\u000a\u000a### Instructions\u000a\u000aAdd `ss-iced` to your application's `package.json` file and then add this line to app.js:\u000a\u000a```javascript\u000ass.client.formatters.add(require('ss-iced'));\u000a```\u000a","readmeFilename":"README.md","gitHead":"1ac801b2d7d4293644a922c8681f6db43adb6064","bugs":{"url":"https://github.com/DeLaGuardo/ss-iced/issues"},"homepage":"https://github.com/DeLaGuardo/ss-iced","_id":"ss-iced@0.3.13","scripts":{},"_shasum":"1f962f585265710562bc4761f06cee7c2280e893","_from":".","_npmVersion":"1.4.14","_npmUser":{"name":"delaguardo","email":"delaguardo@gmail.com"},"maintainers":[{"name":"delaguardo","email":"delaguardo@gmail.com"}],"dist":{"shasum":"1f962f585265710562bc4761f06cee7c2280e893","tarball":"http://registry.npmjs.org/ss-iced/-/ss-iced-0.3.13.tgz"}}: ss-iced
+37 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:274:14)
+37 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:65)
+37 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+37 error     at Request.emit (events.js:98:17)
+37 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+37 error     at Request.emit (events.js:117:20)
+37 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+37 error     at IncomingMessage.emit (events.js:117:20)
+37 error     at _stream_readable.js:929:16
+37 error     at process._tickCallback (node.js:419:13)
+38 error If you need help, you may report this *entire* log,
+38 error including the npm and node versions, at:
+38 error     <http://github.com/npm/npm/issues>
+39 error System Darwin 13.2.0
+40 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish" "."
+41 error cwd /Users/delaguardo/Projects/ss-iced
+42 error node -v v0.10.29
+43 error npm -v 1.4.14
+44 verbose exit [ 1, true ]
